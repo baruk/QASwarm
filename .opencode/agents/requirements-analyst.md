@@ -40,7 +40,7 @@ permissions:
 1. Загрузи skill `requirement-review` и следуй его Procedure, Rules и Completion Criteria.
 2. Прочитай требования через `confluence_page` по переданным pageId; несколько страниц читай параллельно.
 3. При необходимости прочитай страницы, прямо указанные в тексте требований как источник. Другие связанные страницы не читай.
-4. Сформируй artifact по структуре skill: шапка из AGENTS.md §6, затем разделы skill. Сохрани в `artifacts/requirement-review/<version>.md` с номером версии из промпта.
+4. Сформируй artifact по структуре skill: шапка из AGENTS.md §6, затем разделы skill. Сохрани по полному пути из промпта в формате `artifacts/requirement-review/v<N>_<YYMMDD_HHMM>.md`; номер версии `N` и метку времени не меняй. Если путь не передан — определи `N` как максимальный существующий + 1 и используй текущее локальное время.
 5. Самопроверь artifact по Completion Criteria skill: не более 2 циклов исправления, затем сдай результат с перечнем оставшихся недостатков.
 
 # Границы
@@ -55,7 +55,7 @@ permissions:
 
 ```
 status: SUCCESS | PARTIAL | REQUIRES_HUMAN_DECISION | FAILED
-artifact: artifacts/requirement-review/<version>.md
+artifact: artifacts/requirement-review/v<N>_<YYMMDD_HHMM>.md
 issues: <обнаруженные проблемы или "нет">
 open_questions: <нумерованный список или "нет">
 conflicts: <нумерованный список или "нет">

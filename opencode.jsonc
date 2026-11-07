@@ -2,8 +2,8 @@
   "$schema": "https://opencode.ai/config.json",
   // Мультиагентный пайплайн: оркестратор + специалисты.
   // Роли описаны в .opencode/agents/*.md, общий контракт — в AGENTS.md.
-  // Правки инструкций и ролей разрешены агенту build и оркестратору (по явному разрешению владельца).
-  // Специалисты прав на запись в AGENTS.md, opencode.jsonc и .opencode/* не имеют.
+  // Правки инструкций и ролей разрешены только агенту build по явному указанию владельца.
+  // Оркестратор и специалисты прав на запись в AGENTS.md, opencode.jsonc и .opencode/* не имеют.
   "default_agent": "orchestrator",
   "model": "tokenharbor/deepseek-v4.1-flash",
   "permissions": [

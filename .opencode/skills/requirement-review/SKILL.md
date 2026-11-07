@@ -34,7 +34,7 @@ Skill выполняет систематическое ревью требов�
 
 ## Output
 
-Artifact `artifacts/requirement-review/<version>.md`: шапка из AGENTS.md §6, затем разделы
+Artifact `artifacts/requirement-review/v<N>_<YYMMDD_HHMM>.md`: шапка из AGENTS.md §6, затем разделы
 
 - Scope
 - Requirements

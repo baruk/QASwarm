@@ -36,7 +36,7 @@ Skill проектирует риск-ориентированную тесто�
 
 ## Output
 
-Artifact `artifacts/test-model/<version>.md`: шапка из AGENTS.md §6, применённый контракт Priority/Type, дерево сюит (Local ID, название, родитель) или явное указание, что сюиты не нужны, shared steps с Local ID, затем по каждому сценарию:
+Artifact `artifacts/test-model/v<N>_<YYMMDD_HHMM>.md`: шапка из AGENTS.md §6, применённый контракт Priority/Type, дерево сюит (Local ID, название, родитель) или явное указание, что сюиты не нужны, shared steps с Local ID, затем по каждому сценарию:
 
 - Local ID (`C-<n>`)
 - `Ready to create: yes|no`

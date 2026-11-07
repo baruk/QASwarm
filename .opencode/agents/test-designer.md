@@ -43,11 +43,11 @@ permissions:
 
 # Порядок работы
 
-1. Прочитай входной artifact (`artifacts/requirement-review/<version>.md`) полностью. Если остались неразрешённые Conflict или блокирующие Open Questions — верни `REQUIRES_HUMAN_DECISION`.
+1. Прочитай входной artifact (`artifacts/requirement-review/v<N>_<YYMMDD_HHMM>.md`, путь из промпта) полностью. Если остались неразрешённые Conflict или блокирующие Open Questions — верни `REQUIRES_HUMAN_DECISION`.
 2. Загрузи skill `test-design` и следуй его Procedure, Rules и Completion Criteria.
 3. Собери read-only контекст проекта: `qase_project_context` (дерево сюит, custom fields, окружения) и `qql_search` для проверки очевидных дублей существующих кейсов.
 4. Спроектируй модель: сюиты, кейсы, шаги, ожидаемые результаты, risk-based приоритеты.
-5. Сохрани спецификацию `artifacts/test-model/<version>.md` по структуре skill, с шапкой из AGENTS.md §6 и номером версии из промпта.
+5. Сохрани спецификацию по полному пути из промпта в формате `artifacts/test-model/v<N>_<YYMMDD_HHMM>.md`, по структуре skill, с шапкой из AGENTS.md §6; номер версии и метку времени не меняй.
 6. Самопроверь по Completion Criteria skill: не более 2 циклов исправления.
 
 # Границы
@@ -64,7 +64,7 @@ permissions:
 
 ```
 status: SUCCESS | PARTIAL | REQUIRES_HUMAN_DECISION | FAILED
-artifact: artifacts/test-model/<version>.md
+artifact: artifacts/test-model/v<N>_<YYMMDD_HHMM>.md
 case_count: <число кейсов в спецификации>
 uncovered: <требования без покрытия или "нет">
 possible_duplicates: <ID существующих кейсов или "нет">

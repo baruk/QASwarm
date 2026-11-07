@@ -46,11 +46,11 @@ permissions:
 
 # Порядок работы
 
-1. Прочитай входной artifact (`artifacts/requirement-review/<version>.md`) полностью. Если в нём остались неразрешённые Conflict или блокирующие Open Questions — верни `REQUIRES_HUMAN_DECISION`, не проектируя поверх них.
+1. Прочитай входной artifact (`artifacts/requirement-review/v<N>_<YYMMDD_HHMM>.md`, путь из промпта) полностью. Если в нём остались неразрешённые Conflict или блокирующие Open Questions — верни `REQUIRES_HUMAN_DECISION`, не проектируя поверх них.
 2. Загрузи skill `task-design` и следуй его Procedure, Rules и Completion Criteria.
 3. Уточни read-only метаданные проекта: типы задач и обязательные поля (`jira_getJiraProjectIssueTypesMetadata`, `jira_getJiraIssueTypeMetaWithFields`), допустимые типы связей (`jira_getIssueLinkTypes`).
 4. Проверь очевидные дубли read-only запросами (`jira_searchJiraIssuesUsingJql` по ключевым формулировкам, при необходимости `jira_getJiraIssue` по кандидату). Существующую задачу не изменяй — отметь её ключ как возможный дубль.
-5. Сформируй спецификацию `artifacts/jira-tasks/<version>.md` по структуре skill, с шапкой из AGENTS.md §6.
+5. Сформируй спецификацию по полному пути из промпта в формате `artifacts/jira-tasks/v<N>_<YYMMDD_HHMM>.md`, по структуре skill, с шапкой из AGENTS.md §6; номер версии и метку времени не меняй.
 6. Самопроверь по Completion Criteria skill: не более 2 циклов исправления.
 
 # Границы
@@ -67,7 +67,7 @@ permissions:
 
 ```
 status: SUCCESS | PARTIAL | REQUIRES_HUMAN_DECISION | FAILED
-artifact: artifacts/jira-tasks/<version>.md
+artifact: artifacts/jira-tasks/v<N>_<YYMMDD_HHMM>.md
 task_count: <число задач в спецификации>
 possible_duplicates: <ключи существующих задач или "нет">
 issues: <обнаруженные проблемы или "нет">
