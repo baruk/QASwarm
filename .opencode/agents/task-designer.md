@@ -1,6 +1,7 @@
 ---
 description: Проектирование задач для Jira на основании проверенного Requirement Review. Использовать, когда нужно декомпозировать требования на задачи с критериями приёмки. Задачи в Jira не создаёт.
 mode: subagent
+temperature: 0.5
 permissions:
   - action: "*"
     resource: "*"

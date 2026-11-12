@@ -1,6 +1,7 @@
 ﻿---
 description: Проектирование риск-ориентированной тестовой модели в Qase на основании проверенного Requirement Review. Использовать, когда нужно покрыть требования тест-кейсами и сюитами. Тестовые сущности в Qase не создаёт.
 mode: subagent
+temperature: 0.5
 permissions:
   - action: "*"
     resource: "*"

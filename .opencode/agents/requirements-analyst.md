@@ -1,6 +1,7 @@
 ---
 description: Ревью требований из Confluence и создание артефакта Requirement Review. Использовать, когда нужно проанализировать страницу требований, найти неоднозначности и конфликты. Не создаёт задачи Jira и тест-кейсы Qase.
 mode: subagent
+temperature: 0.5
 permissions:
   - action: "*"
     resource: "*"
