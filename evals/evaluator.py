@@ -123,7 +123,7 @@ ACTUAL AGENT RESPONSE:
             "opencode.cmd",
             "run",
             "-m",
-            "tokenharbor/deepseek-v4.1-flash:free",
+            "openrouter/openrouter/free",
             "--format",
             "json",
         ],
