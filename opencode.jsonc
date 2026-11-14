@@ -5,7 +5,9 @@
   // Правки инструкций и ролей разрешены только агенту build по явному указанию владельца.
   // Оркестратор и специалисты прав на запись в AGENTS.md, opencode.jsonc и .opencode/* не имеют.
   "default_agent": "orchestrator",
-  "model": "tokenharbor/deepseek-v4.1-flash",
+//  "model": "tokenharbor/deepseek-v4.1-flash",
+  "model": "openrouter/deepseek/deepseek-v4.1-flash-1017",
+  //"model": "agentrouter/gpt-5.6-sol",
   "permissions": [
     {
       "action": "subagent",
@@ -84,19 +86,26 @@
       ]
     },
     "requirements-analyst": {
-      "model": "tokenharbor/deepseek-v4.1-flash"
+      //"model": "tokenharbor/deepseek-v4.1-flash"
+      "model": "openrouter/deepseek/deepseek-v4.1-flash-1017"
+      //"model": "agentrouter/gpt-5.6-sol"
     },
     "task-designer": {
-      "model": "tokenharbor/deepseek-v4.1-flash"
+      //"model": "tokenharbor/deepseek-v4.1-flash"
+      "model": "openrouter/deepseek/deepseek-v4.1-flash-1017"
+      //"model": "agentrouter/gpt-5.6-sol"
     },
     "test-designer": {
-      "model": "tokenharbor/deepseek-v4.1-flash"
+      //"model": "tokenharbor/deepseek-v4.1-flash"
+      "model": "openrouter/deepseek/deepseek-v4.1-flash-1017"
+      //"model": "agentrouter/gpt-5.6-sol"
     },
     "jira-publisher": {
-      "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+      "model": "openrouter/deepseek/deepseek-v4.1-flash-1017"
     },
     "qase-publisher": {
-      "model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+      //"model": "opencode/deepseek-v4.1-flash-free"
+      "model": "openrouter/deepseek/deepseek-v4.1-flash-1017"
     }
   }
 }
